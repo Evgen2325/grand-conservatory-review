@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#071013">
-  <title>Grand Conservatory — Hero Tree Art Direction Review</title>
+  <title>Grand Conservatory — Hero Tree Placement + Main Transition</title>
   <style>
     :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #071013; color: #edf6f3; }
     header { padding: 24px 18px 14px; max-width: 1080px; margin: auto; }
-    h1 { margin: 0 0 6px; font-size: clamp(24px, 6vw, 48px); }
+    h1 { margin: 0 0 8px; font-size: clamp(24px, 6vw, 48px); line-height: 1.05; }
     p { color: #9db0ad; margin: 0; line-height: 1.5; }
-    .status { display: inline-block; margin: 14px 0 0; padding: 8px 11px; border: 1px solid #a76745; border-radius: 999px; color: #ffd3b9; background: #2b1710; font-size: 13px; font-weight: 800; letter-spacing: .04em; }
+    .facts { margin-top: 14px; color: #bfe7df; font-size: 14px; }
+    .status { display: inline-block; margin: 14px 0 0; padding: 8px 11px; border: 1px solid #a88745; border-radius: 999px; color: #ffe7a8; background: #2b2410; font-size: 13px; font-weight: 800; letter-spacing: .04em; }
     nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
     a.button { color: #071013; background: #88e39b; padding: 11px 15px; border-radius: 10px; text-decoration: none; font-weight: 700; }
     a.button.secondary { color: #cde6e1; background: #14272a; border: 1px solid #2a4649; }
@@ -30,50 +31,48 @@
 <body>
   <header>
     <h1>Grand Conservatory</h1>
-    <p>Hero Tree art-direction corrective review. Нажмите на любое изображение — оно откроется отдельно и увеличивается пальцами.</p>
-    <div class="status">BLOCKED · GAME DIRECTOR DECISION REQUIRED</div>
+    <p>Hero Tree placement correction + Main Transition around the roots. Нажмите на изображение — оно откроется отдельно и увеличивается пальцами.</p>
+    <p class="facts">Дерево: X 1366 → X 1270 (−96 px). Scale 0.64 сохранён. Lower начинается на Y 980. Старые колонны выключены.</p>
+    <div class="status">READY FOR GAME DIRECTOR REVIEW · NOT ACCEPTED</div>
     <nav>
-      <a class="button" href="assets/hero-tree-review.png">Открыть картинку отдельно</a>
-      <a class="button secondary" href="assets/camera-motion.mp4">Открыть видео отдельно</a>
+      <a class="button" href="assets/hero-tree-review.png">Открыть главный review-лист</a>
+      <a class="button secondary" href="assets/camera-motion.mp4">Видео Main Transition</a>
+      <a class="button secondary" href="assets/tree-placement-motion.mp4">Видео сдвига дерева</a>
     </nav>
   </header>
   <main>
     <section>
       <h2>Мобильный review-лист</h2>
-      <p class="note">Основной лист: silhouette, placement, center frame, decomposition и вердикт.</p>
-      <a href="assets/hero-tree-review.png"><img src="assets/hero-tree-review.png" alt="Hero Tree mobile review"></a>
+      <p class="note">Полный результат: старое/новое положение, центр, корни, крайние положения камеры и Lower boundary.</p>
+      <a href="assets/hero-tree-review.png"><img src="assets/hero-tree-review.png" alt="Hero Tree and Main Transition mobile review"></a>
     </section>
     <section>
-      <h2>Движение камеры и parallax</h2>
+      <h2>Камера и parallax после Main Transition</h2>
       <video controls playsinline preload="metadata" src="assets/camera-motion.mp4"></video>
     </section>
     <section>
-      <h2>Master Hero Tree</h2>
-      <a href="assets/master-tree.png"><img loading="lazy" src="assets/master-tree.png" alt="Master Hero Tree"></a>
+      <h2>Измеренный placement blueprint</h2>
+      <a href="assets/placement-blueprint.png"><img loading="lazy" src="assets/placement-blueprint.png" alt="Measured placement blueprint"></a>
     </section>
     <section>
-      <h2>До / после</h2>
-      <a href="assets/before-after.png"><img loading="lazy" src="assets/before-after.png" alt="Before and after"></a>
+      <h2>До / после Main Transition</h2>
+      <a href="assets/before-after.png"><img loading="lazy" src="assets/before-after.png" alt="Before and after Main Transition"></a>
     </section>
     <div class="grid">
-      <section>
-        <h2>Центральная камера</h2>
-        <a href="assets/center-camera.png"><img loading="lazy" src="assets/center-camera.png" alt="Center camera frame"></a>
-      </section>
-      <section>
-        <h2>Правый предел камеры</h2>
-        <a href="assets/right-extreme.png"><img loading="lazy" src="assets/right-extreme.png" alt="Right camera extreme"></a>
-      </section>
-      <section>
-        <h2>Нарезка из одного Master</h2>
-        <a href="assets/decomposition.png"><img loading="lazy" src="assets/decomposition.png" alt="Same-source decomposition"></a>
-      </section>
-      <section>
-        <h2>Распределение кроны</h2>
-        <a href="assets/crown-distribution.png"><img loading="lazy" src="assets/crown-distribution.png" alt="Crown distribution diagnostic"></a>
-      </section>
+      <section><h2>Центральная камера</h2><a href="assets/center-camera.png"><img loading="lazy" src="assets/center-camera.png" alt="Center camera"></a></section>
+      <section><h2>Корни + конструкция</h2><a href="assets/root-interface.png"><img loading="lazy" src="assets/root-interface.png" alt="Root architecture interface"></a></section>
+      <section><h2>Левый предел</h2><a href="assets/left-extreme.png"><img loading="lazy" src="assets/left-extreme.png" alt="Left camera extreme"></a></section>
+      <section><h2>Правый предел</h2><a href="assets/right-extreme.png"><img loading="lazy" src="assets/right-extreme.png" alt="Right camera extreme"></a></section>
+      <section><h2>Самая высокая камера</h2><a href="assets/highest-camera.png"><img loading="lazy" src="assets/highest-camera.png" alt="Highest camera"></a></section>
+      <section><h2>Самая низкая камера</h2><a href="assets/lowest-camera.png"><img loading="lazy" src="assets/lowest-camera.png" alt="Lowest camera"></a></section>
+      <section><h2>Граница Lower Y 980</h2><a href="assets/lower-boundary.png"><img loading="lazy" src="assets/lower-boundary.png" alt="Lower boundary"></a></section>
+      <section><h2>Grayscale / value</h2><a href="assets/grayscale.png"><img loading="lazy" src="assets/grayscale.png" alt="Grayscale review"></a></section>
     </div>
+    <section>
+      <h2>Принятый structural cradle asset</h2>
+      <a href="assets/root-cradle.png"><img loading="lazy" src="assets/root-cradle.png" alt="Rear root cradle asset"></a>
+    </section>
   </main>
-  <footer>HERO_TREE_ART_DIRECTION_BLOCKED / GAME_DIRECTOR_DECISION_REQUIRED</footer>
+  <footer>READY_FOR_GAME_DIRECTOR_HERO_TREE_PLACEMENT_AND_MAIN_TRANSITION_REVIEW / NOT_ACCEPTED</footer>
 </body>
 </html>
