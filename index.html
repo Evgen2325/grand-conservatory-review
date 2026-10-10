@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#071013">
-  <title>Grand Conservatory — Hero Tree Review</title>
+  <title>Grand Conservatory — Hero Tree Art Direction Review</title>
   <style>
     :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
     * { box-sizing: border-box; }
@@ -12,27 +12,35 @@
     header { padding: 24px 18px 14px; max-width: 1080px; margin: auto; }
     h1 { margin: 0 0 6px; font-size: clamp(24px, 6vw, 48px); }
     p { color: #9db0ad; margin: 0; line-height: 1.5; }
+    .status { display: inline-block; margin: 14px 0 0; padding: 8px 11px; border: 1px solid #a76745; border-radius: 999px; color: #ffd3b9; background: #2b1710; font-size: 13px; font-weight: 800; letter-spacing: .04em; }
     nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
     a.button { color: #071013; background: #88e39b; padding: 11px 15px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+    a.button.secondary { color: #cde6e1; background: #14272a; border: 1px solid #2a4649; }
     main { max-width: 1080px; margin: auto; padding: 0 12px 40px; }
     section { margin: 18px 0 30px; }
     h2 { font-size: 18px; margin: 0 6px 10px; color: #bfe7df; }
+    .note { margin: 0 6px 12px; color: #91a9a5; font-size: 14px; }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid section { margin: 0; }
     img, video { display: block; width: 100%; height: auto; border-radius: 12px; background: #030708; border: 1px solid #1c3032; }
     footer { padding: 16px; text-align: center; color: #728784; font-size: 13px; }
+    @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } nav a { width: 100%; text-align: center; } }
   </style>
 </head>
 <body>
   <header>
     <h1>Grand Conservatory</h1>
-    <p>Unified Hero Tree — corrective review. Нажмите на изображение и увеличьте его пальцами.</p>
+    <p>Hero Tree art-direction corrective review. Нажмите на любое изображение — оно откроется отдельно и увеличивается пальцами.</p>
+    <div class="status">BLOCKED · GAME DIRECTOR DECISION REQUIRED</div>
     <nav>
       <a class="button" href="assets/hero-tree-review.png">Открыть картинку отдельно</a>
-      <a class="button" href="assets/camera-motion.mp4">Открыть видео отдельно</a>
+      <a class="button secondary" href="assets/camera-motion.mp4">Открыть видео отдельно</a>
     </nav>
   </header>
   <main>
     <section>
       <h2>Мобильный review-лист</h2>
+      <p class="note">Основной лист: silhouette, placement, center frame, decomposition и вердикт.</p>
       <a href="assets/hero-tree-review.png"><img src="assets/hero-tree-review.png" alt="Hero Tree mobile review"></a>
     </section>
     <section>
@@ -47,7 +55,25 @@
       <h2>До / после</h2>
       <a href="assets/before-after.png"><img loading="lazy" src="assets/before-after.png" alt="Before and after"></a>
     </section>
+    <div class="grid">
+      <section>
+        <h2>Центральная камера</h2>
+        <a href="assets/center-camera.png"><img loading="lazy" src="assets/center-camera.png" alt="Center camera frame"></a>
+      </section>
+      <section>
+        <h2>Правый предел камеры</h2>
+        <a href="assets/right-extreme.png"><img loading="lazy" src="assets/right-extreme.png" alt="Right camera extreme"></a>
+      </section>
+      <section>
+        <h2>Нарезка из одного Master</h2>
+        <a href="assets/decomposition.png"><img loading="lazy" src="assets/decomposition.png" alt="Same-source decomposition"></a>
+      </section>
+      <section>
+        <h2>Распределение кроны</h2>
+        <a href="assets/crown-distribution.png"><img loading="lazy" src="assets/crown-distribution.png" alt="Crown distribution diagnostic"></a>
+      </section>
+    </div>
   </main>
-  <footer>READY_FOR_GAME_DIRECTOR_UNIFIED_HERO_TREE_REVIEW / NOT_ACCEPTED</footer>
+  <footer>HERO_TREE_ART_DIRECTION_BLOCKED / GAME_DIRECTOR_DECISION_REQUIRED</footer>
 </body>
 </html>
