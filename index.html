@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#071013">
-  <title>Grand Conservatory — Hero Tree Placement + Main Transition</title>
+  <title>Grand Conservatory — Hero Tree Contact + Decay</title>
   <style>
     :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #071013; color: #edf6f3; }
     header { padding: 24px 18px 14px; max-width: 1080px; margin: auto; }
-    h1 { margin: 0 0 8px; font-size: clamp(24px, 6vw, 48px); line-height: 1.05; }
+    h1 { margin: 0 0 8px; font-size: clamp(26px, 7vw, 52px); line-height: 1.04; }
     p { color: #9db0ad; margin: 0; line-height: 1.5; }
     .facts { margin-top: 14px; color: #bfe7df; font-size: 14px; }
     .status { display: inline-block; margin: 14px 0 0; padding: 8px 11px; border: 1px solid #a88745; border-radius: 999px; color: #ffe7a8; background: #2b2410; font-size: 13px; font-weight: 800; letter-spacing: .04em; }
@@ -31,48 +31,53 @@
 <body>
   <header>
     <h1>Grand Conservatory</h1>
-    <p>Hero Tree placement correction + Main Transition around the roots. Нажмите на изображение — оно откроется отдельно и увеличивается пальцами.</p>
-    <p class="facts">Дерево: X 1366 → X 1270 (−96 px). Scale 0.64 сохранён. Lower начинается на Y 980. Старые колонны выключены.</p>
+    <p>Hero Tree + разрушенный Main Transition + читаемый проход вниз + локальный decay / moss / broken-glass pass. Нажмите на изображение, чтобы открыть его отдельно и увеличить пальцами.</p>
+    <p class="facts">Проход: world X 1050.7–1149.4. Tree/contact: X 1190, scale 0.70, scroll 1.0. Lower начинается на Y 980. Production-сцена не изменена.</p>
     <div class="status">READY FOR GAME DIRECTOR REVIEW · NOT ACCEPTED</div>
     <nav>
-      <a class="button" href="assets/hero-tree-review.png">Открыть главный review-лист</a>
-      <a class="button secondary" href="assets/camera-motion.mp4">Видео Main Transition</a>
-      <a class="button secondary" href="assets/tree-placement-motion.mp4">Видео сдвига дерева</a>
+      <a class="button" href="assets/root-contact-mobile-review.png">Открыть главный review-лист</a>
+      <a class="button secondary" href="assets/root-contact-camera-motion.mp4">Видео движения камеры</a>
+      <a class="button secondary" href="assets/contact-zone-blueprint.png">Blueprint прохода</a>
     </nav>
   </header>
   <main>
     <section>
-      <h2>Мобильный review-лист</h2>
-      <p class="note">Полный результат: старое/новое положение, центр, корни, крайние положения камеры и Lower boundary.</p>
-      <a href="assets/hero-tree-review.png"><img src="assets/hero-tree-review.png" alt="Hero Tree and Main Transition mobile review"></a>
+      <h2>Главный мобильный review-лист</h2>
+      <p class="note">Центральный кадр, крупный план узла и overlay фактического gameplay route.</p>
+      <a href="assets/root-contact-mobile-review.png"><img src="assets/root-contact-mobile-review.png" alt="Hero Tree contact and decay mobile review"></a>
     </section>
     <section>
-      <h2>Камера и parallax после Main Transition</h2>
-      <video controls playsinline preload="metadata" src="assets/camera-motion.mp4"></video>
+      <h2>Camera motion / parallax</h2>
+      <video controls playsinline preload="metadata" src="assets/root-contact-camera-motion.mp4"></video>
     </section>
     <section>
-      <h2>Измеренный placement blueprint</h2>
-      <a href="assets/placement-blueprint.png"><img loading="lazy" src="assets/placement-blueprint.png" alt="Measured placement blueprint"></a>
+      <h2>Contact-zone blueprint</h2>
+      <p class="note">Слева — художественная цель; справа — фактическая Godot geometry, зелёный коридор и route anchors.</p>
+      <a href="assets/contact-zone-blueprint.png"><img loading="lazy" src="assets/contact-zone-blueprint.png" alt="Contact zone blueprint"></a>
     </section>
     <section>
-      <h2>До / после Main Transition</h2>
-      <a href="assets/before-after.png"><img loading="lazy" src="assets/before-after.png" alt="Before and after Main Transition"></a>
+      <h2>До / после corrective pass</h2>
+      <a href="assets/root-contact-before-after.png"><img loading="lazy" src="assets/root-contact-before-after.png" alt="Rejected no-route contact and corrected route contact"></a>
+    </section>
+    <section>
+      <h2>Tree → Transition → Lower</h2>
+      <a href="assets/tree-transition-architecture.png"><img loading="lazy" src="assets/tree-transition-architecture.png" alt="Tree transition architecture sheet"></a>
+    </section>
+    <section>
+      <h2>Decay / moss / broken glass</h2>
+      <a href="assets/decay-broken-glass.png"><img loading="lazy" src="assets/decay-broken-glass.png" alt="Decay moss and broken glass review"></a>
     </section>
     <div class="grid">
-      <section><h2>Центральная камера</h2><a href="assets/center-camera.png"><img loading="lazy" src="assets/center-camera.png" alt="Center camera"></a></section>
-      <section><h2>Корни + конструкция</h2><a href="assets/root-interface.png"><img loading="lazy" src="assets/root-interface.png" alt="Root architecture interface"></a></section>
-      <section><h2>Левый предел</h2><a href="assets/left-extreme.png"><img loading="lazy" src="assets/left-extreme.png" alt="Left camera extreme"></a></section>
-      <section><h2>Правый предел</h2><a href="assets/right-extreme.png"><img loading="lazy" src="assets/right-extreme.png" alt="Right camera extreme"></a></section>
-      <section><h2>Самая высокая камера</h2><a href="assets/highest-camera.png"><img loading="lazy" src="assets/highest-camera.png" alt="Highest camera"></a></section>
-      <section><h2>Самая низкая камера</h2><a href="assets/lowest-camera.png"><img loading="lazy" src="assets/lowest-camera.png" alt="Lowest camera"></a></section>
-      <section><h2>Граница Lower Y 980</h2><a href="assets/lower-boundary.png"><img loading="lazy" src="assets/lower-boundary.png" alt="Lower boundary"></a></section>
-      <section><h2>Grayscale / value</h2><a href="assets/grayscale.png"><img loading="lazy" src="assets/grayscale.png" alt="Grayscale review"></a></section>
+      <section><h2>Центральная камера</h2><a href="assets/root-contact-center.png"><img loading="lazy" src="assets/root-contact-center.png" alt="Center camera"></a></section>
+      <section><h2>Узел корней крупно</h2><a href="assets/root-contact-closeup.png"><img loading="lazy" src="assets/root-contact-closeup.png" alt="Root contact closeup"></a></section>
+      <section><h2>Левый предел</h2><a href="assets/root-contact-left.png"><img loading="lazy" src="assets/root-contact-left.png" alt="Left camera extreme"></a></section>
+      <section><h2>Правый предел</h2><a href="assets/root-contact-right.png"><img loading="lazy" src="assets/root-contact-right.png" alt="Right camera extreme"></a></section>
+      <section><h2>Самая высокая камера</h2><a href="assets/root-contact-highest.png"><img loading="lazy" src="assets/root-contact-highest.png" alt="Highest camera"></a></section>
+      <section><h2>Самая низкая камера</h2><a href="assets/root-contact-lowest.png"><img loading="lazy" src="assets/root-contact-lowest.png" alt="Lowest camera"></a></section>
+      <section><h2>Grayscale / value</h2><a href="assets/root-contact-grayscale.png"><img loading="lazy" src="assets/root-contact-grayscale.png" alt="Grayscale review"></a></section>
+      <section><h2>False-affordance / route audit</h2><a href="assets/root-contact-route-audit.png"><img loading="lazy" src="assets/root-contact-route-audit.png" alt="Route and false affordance audit"></a></section>
     </div>
-    <section>
-      <h2>Принятый structural cradle asset</h2>
-      <a href="assets/root-cradle.png"><img loading="lazy" src="assets/root-cradle.png" alt="Rear root cradle asset"></a>
-    </section>
   </main>
-  <footer>READY_FOR_GAME_DIRECTOR_HERO_TREE_PLACEMENT_AND_MAIN_TRANSITION_REVIEW / NOT_ACCEPTED</footer>
+  <footer>READY_FOR_GAME_DIRECTOR_HERO_TREE_CONTACT_AND_DECAY_REVIEW / NOT_ACCEPTED</footer>
 </body>
 </html>
